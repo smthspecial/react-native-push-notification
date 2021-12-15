@@ -900,6 +900,7 @@ public class RNPushNotificationHelper {
             // If channel name or description is updated then update the existing channel.
             channel = new NotificationChannel(channel_id, channel_name, importance);
 
+            channel.setShowBadge(false);
             channel.setDescription(channel_description);
             channel.enableLights(true);
             channel.enableVibration(vibratePattern != null);
